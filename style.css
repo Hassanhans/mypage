@@ -1,64 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:wght@400;700&display=swap');
+
 * {
-    margin: 2;
+    margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    margin-right: 2px;
-
-    
-    
-}
-
-header{
-    background-image:url(images/Aerial-One&OnlyReethiRah-Maldives-CRHotel.jpg);
-    height: 100vh;
-    background-position: top center;
-    position: relative;
-    z-index: 1;
     box-sizing: border-box;
-    
-    
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
 }
 
-ul{
-    float: right;
-    list-style-type: none;s
-    margin-top: 10px;
+/* navbar style */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    background-color:;
+    font-family: 'Ubuntu' sans-serif;
+    transition: all 0.3s ease;
 }
-
-ul li{
+.navbar.sticky{
+    padding: 15px 0;
+    background: crimson;
+}
+.navbar .max-width{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.navbar .logo a{
+     color: #fff;
+     font-size: 55px;
+     font-weight: 600;
+     padding-left: 60;
+     position: fixed;
+     top: 0;
+     left: 0;
+}
+.navbar .logo a span{
+    color: crimson;
+}
+.navbar .menu li{
+    list-style: none;
     display: inline-block;
 }
-
-ul li a{
-    text-decoration: none;
+.navbar .menu li a{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+/* home section styling */
+.home{
+    display: flex;
+    background: url(images/pic4.jpg.jpg) no-repeat center;
+    height: 100vh;
     color: #fff;
-    padding: 5px 20px;
-    border: 1px solid #fff;
-    transition: 0.6e ease;
+    min-height: 500px;
+    font-family: 'Ubuntu' sans-serif;
+    background-position: center;
 }
-
-ul li a:hover{
-    background-color: #fff;
-    color: #000;
+.home .max-width{
+    margin: auto 0 auto 40px;
 }
-
-ul li.active a{
-    background-color: #fff;
-    color: black;
+.home .home-content .text-1{
+    font-size: 27px;
+    margin: 5px 0;
 }
-
-
-.main{
-    max-width: 1200px;
-    margin: auto;
-    
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    color: crimson;
 }
-
-.title{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% ,-50%);
-    
-    
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
 }
