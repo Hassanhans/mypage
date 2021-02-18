@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:wght@400;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
-
-/* navbar style */
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 18px 0px;
+  }
+  
+  .Header{
+     background-color: firebrick;
+     grid-column-start: 1;
+     grid-column-end: span 4;
+     grid-row-start: 1;
+     grid-row-end: span 3;
+     height: 150px;
+  }
+  /* nav style */
 .navbar{
     position: fixed;
     width: 100%;
@@ -21,70 +23,70 @@
     background-color:;
     font-family: 'Ubuntu' sans-serif;
     transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
 }
-.navbar.sticky{
+.nav.sticky{
     padding: 15px 0;
     background: crimson;
 }
-.navbar .max-width{
+.nav .max-width{
      display: flex;
      align-items: center;
      justify-content: space-between;
 }
-.navbar .logo a{
-     color: #fff;
-     font-size: 55px;
-     font-weight: 600;
-     padding-left: 60;
-     position: fixed;
-     top: 0;
-     left: 0;
-}
-.navbar .logo a span{
-    color: crimson;
-}
-.navbar .menu li{
+
+.nav a{
     list-style: none;
     display: inline-block;
-}
-.navbar .menu li a{
+    align-items: right;
+    margin-left: 30px;
     color: white;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
+    justify-content: right;
 }
-.navbar .menu li a:hover{
-    color: crimson;
+  
+  .sidebar{
+      background-color: green;
+      grid-column-start: 1;
+      grid-column-end: span 2;
+      grid-row-start: 2;
+      grid-row-end: span 2;
+
+  }
+  .sidebar img{
+      height: 250px;
+      width: 150px;
+  }
+  .sider p{
+      font-size: 25px;
+  }
+  
+  .main{
+      background-color: blueviolet;
+      grid-column-start: 3;
+      grid-column-end: span 4;
+      grid-row-start: 2;
+      grid-row-end: span 2;
+
+  }
+  
+  .footer{
+      background-color: lawngreen;
+      grid-column-start: 1;
+      grid-column-end: span 4;
+      grid-row-start: 4;
+      grid-row-end: span 4;   
 }
-/* home section styling */
-.home{
-    display: flex;
-    background: url(images/pic4.jpg.jpg) no-repeat center;
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    font-family: 'Ubuntu' sans-serif;
-    background-position: center;
+
+
+.main h2{
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
 }
-.home .max-width{
-    margin: auto 0 auto 40px;
-}
-.home .home-content .text-1{
-    font-size: 27px;
-    margin: 5px 0;
-}
-.home .home-content .text-2{
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-    color: crimson;
-}
-.home .home-content .text-3{
-    font-size: 40px;
-    margin: 5px 0;
-}
-.home .home-content .text-3 span{
-    color: crimson;
-    font-weight: 500;
+.main p{
+    font-size: 25px;
 }
