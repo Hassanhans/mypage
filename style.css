@@ -138,7 +138,7 @@ button:active{
 }
 .about-text p:nth-child(2){
 	color:white;
-	font-size:13px;
+	font-size:20px;
 	font-family: myriad pro;
 	font-weight:bold;
 	line-height:5px;
@@ -146,7 +146,7 @@ button:active{
 .about-text p:nth-child(3),.about-text p:nth-child(4){
 	color:white;
 	font-family:calibri;
-	font-size:16px;
+	font-size:17px;
 }
 .about-text button{
 	width:120px;
@@ -364,4 +364,36 @@ footer{
 .social i{
 	font-size:20px;
 	color:#2B2B2B;
+}
+.col{
+    margin-left: 250px;
+    position: relative;
+    display: block;
+    margin-left: 400px;
+    padding: 0rem;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    border-radius: 10px;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    box-shadow: 5px;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.6; 
+    float: right;
+}
+.card1{
+    background-image: url(images/logo.png.jpg);
+}
+.card2{
+    background-image: url(images/chieri.jpg.jpeg);
+}
+.card3{
+    background-image: url(images/pic1.jpg.jpg);
+}
+.card:hover{
+    transform: translateY(-10px);
 }
