@@ -47,7 +47,7 @@ nav ul li a{
 	font-size: 30px;
 }
 .active{
-	color:#2d2a2a;
+	color:white;
 	font-weight:bold;
 }
 .model{
@@ -98,10 +98,14 @@ nav ul li a{
 	top:42%;
 	transform:translate(-13%,-42%);
 }
+nav{
+	background-color: #343a40;
+}
 .hire-btn{
 	border:2px solid #373636;
 	color:white;
-	background-color:transparent;	
+	background-color:transparent;
+	text-decoration: none;	
 }
 .down-cv{
 	background-color:#0B0B0B;
@@ -193,7 +197,7 @@ font-size: 15px;}
 	height:320px;
 	background-repeat: no-repeat;
 	background-size: cover;
-    background-image: url(images/pic4.jpg.jpg);
+    background-image: url();
 	box-shadow:2px 2px 18px rgba(0,0,0,0.3);
 	align-items: center;
 	justify-content: center;
@@ -256,7 +260,7 @@ font-size: 15px;}
 	height:280px;
 	background-size:cover;
 	background-repeat:no-repeat;
-	background-image: url("images/pic4.jpg.jpg");
+	background-image: url("");
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -365,12 +369,10 @@ footer{
 	font-size:20px;
 	color:#2B2B2B;
 }
-.col{
-    margin-left: 250px;
-    position: relative;
-    display: block;
-    margin-left: 400px;
-    padding: 0rem;
+.pic-container{
+	display:flex;
+	justify-content:space-between;
+	background-color: #000000;
 }
 .card{
     width: 200px;
