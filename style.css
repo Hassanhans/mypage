@@ -27,6 +27,7 @@ nav {
 	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
 	padding:0px 5%;	
 }
+
 nav ul{
 	display: flex;
 }
@@ -101,16 +102,20 @@ nav ul li a{
 nav{
 	background-color: #343a40;
 }
-.hire-btn{
+.hire-btn {
 	border:2px solid #373636;
 	color:white;
 	background-color:transparent;
 	text-decoration: none;	
 }
-.down-cv{
+.down-cv {
 	background-color:#0B0B0B;
 	color:#fff;	
 	border:none;
+}
+a{
+	color:crimson;
+
 }
 button:active{
 	transform:scale(1.1);
@@ -166,6 +171,10 @@ button:active{
 	background-color:#343a40;
 	padding: 2% 10% 0px 10%;
 }
+.travel-btn {
+	color: white;
+	border: 1px solid black;
+}
 .services-text p:nth-child(1){
 	font-family: calibri;
 	font-weight:bold;
@@ -180,8 +189,8 @@ button:active{
 	font-size: 15px;
 	line-height: 5px;
 }
-.services-text p:nth-child(3)
-{font-family:calibri;
+.services-text p:nth-child(3){
+font-family:calibri;
 color:white;
 font-size: 15px;}
 .services-text{
@@ -206,15 +215,7 @@ font-size: 15px;}
 	margin: 0px 4px;	
 }
  
-.box-1{
-	background-image:url("images/pic7.jpg.jpg");
-}
-.box-2{
-	background-image:url("images/pic7.jpg.jpg");
-}
-.box-3{
-	background-image: url("images/pic7.jpg.jpg");
-}
+
 .box-1 span,
 .box-2 span,
 .box-3 span{
@@ -254,6 +255,12 @@ font-size: 15px;}
 	border:none;
 	outline: none;
 	border-radius:5px;
+}
+figure img{
+	height: 350px;
+	justify-content: space-between;
+	border-radius: 2px;
+	border: 1px solid black;
 }
 .contact-me{
 	width: 100%;
