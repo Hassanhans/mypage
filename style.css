@@ -256,6 +256,10 @@ font-size: 15px;}
 	outline: none;
 	border-radius:5px;
 }
+.flex-box{
+	display: flex;
+	align-items: center;
+}
 figure img{
 	height: 350px;
 	justify-content: space-between;
@@ -394,15 +398,43 @@ footer{
     transition: transform 0.6; 
     float: right;
 }
-.card1{
-    background-image: url(images/logo.png.jpg);
-}
-.card2{
-    background-image: url(images/chieri.jpg.jpeg);
-}
-.card3{
-    background-image: url(images/pic1.jpg.jpg);
-}
-.card:hover{
-    transform: translateY(-10px);
-}
+.fun-pic {
+	object-fit: cover;
+	width: 350px;
+	height: 350px;
+	border-radius: 5px;
+	justify-content: space-between;
+  }
+  
+  #fun {
+	background: #343a40;
+	background-image: url(images/my\ living\ room.jpg.webp);
+  }
+  
+  #fun:hover {
+	background: #343a40;
+	color: white;
+	transition: 0.6s;
+  }
+  
+  .boxes {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	background: white;                         
+	padding: 30px;                             
+	border-radius: 4px;                        
+	box-shadow: 0 10px 30px rgba(0,0,0,.1);
+	margin-bottom: 10px;
+	transition: 0.2s;
+    justify-content: space-between;
+  }
+  .pics {
+	width: 250px;
+	height: 250px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+	justify-content: space-between;
+  }
